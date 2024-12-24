@@ -1,0 +1,86 @@
+/* Right Sidebar Styling */
+.right-sidebar {
+    position: fixed;
+    top: 80px; /* Just below the navbar */
+    right: 20px;
+    z-index: 10;
+    width: auto; /* Adjust to fit content size */
+  }
+  
+  /* Side-by-Side Layout for Insurance and Login */
+  .side-by-side {
+    display: flex; /* Horizontal alignment */
+    align-items: center; /* Align items horizontally */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* Dropdown Button (Insurance) */
+  .dropdown-button {
+    background: #0093E9; /* Blue background for Insurance button */
+    color: white;
+    border: none;
+    padding: 8px 10px;/* Larger size for Insurance button */
+    cursor: pointer;
+    font-size: 0.9em; /* Normal font size */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center; /* Center the text */
+    min-width: 100px;  /* Center the text */
+    min-width: 100px; /* Width for Insurance button */
+  }
+  
+  .dropdown-button:hover {
+    background-color: #80D0C7; /* Lighter blue on hover */
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    position: absolute;
+     /* Adjust to prevent overlap */
+    right: 0;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    min-width: 160px;
+    z-index: 15;
+  }
+  
+  /* Dropdown Links */
+  .dropdown-link {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 0.85em;
+  }
+  
+  .dropdown-link:hover {
+    background-color: #f4f4f4;
+  }
+  
+
+
+  /* Login Button */
+  .login-button {
+    background: #0093E9; /* Blue background for Insurance button */
+    color: white;
+    border: none;
+    margin-top: 17px;
+    padding: 8px 10px; /* Larger size for Insurance button */
+    cursor: pointer;
+    font-size: 0.9em; /* Normal font size */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center; /* Center the text */
+    min-width: 100px;  /* Center the text */
+    min-width: 100px; /* Smaller width for Login button */
+    transform: translateY(2px); /* Slightly lower the Login button */
+  }
+  
+  .login-button:hover {
+    background-color: #357abd; /* Darker blue on hover */
+  }
+  

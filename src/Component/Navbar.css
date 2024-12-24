@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFF6FB;
+    color: #2C3E50;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #21C1D6;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #d3e9f8;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #1F3B4D;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: #EFF6FB;
+    font-size: 1.1em;
+  }
+  
+  /* Login Button */
+  .btn-login {
+    border: 1px solid #21C1D6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #EFF6FB;
+    background: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #21C1D6;
+    color: #fff;
+  }
+  
+  /* Second Navbar Styles */
+  .navbar-second {
+    position: fixed;
+    width: 100%;
+    top: 60px; /* Adjusted to sit below the first navbar */
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px 40px;
+    background-color: #3f789c;
+    z-index: 999;
+  }
+  
+  .navbar-second select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #2C3E50;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .navbar-second select:focus {
+    outline: none;
+    border-color: #21C1D6;
+    box-shadow: 0 0 8px rgba(33, 193, 214, 0.5);
+  }
+  
+  .navbar-second select option {
+    color: #2C3E50;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-end;
+      margin: 0;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .navbar-second {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  
